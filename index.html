@@ -21,9 +21,8 @@
       --ring:#c7eef3;
       --shadow:0 10px 30px rgba(2,22,30,.12);
       --radius:16px;
-      /* >>> Set your hero background image here.
-         If your file is /img/hero.png this will work out of the box. */
-      --hero-bg: url('img/hero.png');
+      /* Use hero.png in repo root. ?v=1 busts cache on updates. */
+      --hero-bg: url('hero.png?v=1');
     }
     *{box-sizing:border-box}
     html,body{margin:0;font-family:Inter,system-ui,Segoe UI,Roboto,Arial,sans-serif;color:var(--text);scroll-behavior:smooth}
@@ -57,7 +56,7 @@
     }
     .hero h1{font-size:clamp(2.1rem,5vw,3.6rem);margin:0 0 8px;line-height:1.05;font-weight:800}
     .hero h1 .accent{color:#0aa6b9;letter-spacing:.2px}
-    .hero p{max-width:880px;font-size:1.08rem;color:#2b3a44}
+    .hero p{max-width:880px;font-size:1.06rem;color:#2b3a44}
     .hero .cta{display:flex;gap:12px;margin-top:18px;flex-wrap:wrap}
     .stats{display:flex;gap:26px;margin-top:26px;flex-wrap:wrap}
     .stat{display:flex;flex-direction:column}
@@ -129,7 +128,14 @@
   <header class="hero">
     <div class="container">
       <h1>Product Manager<br/><span class="accent">Deep-Tech & Med-Tech</span></h1>
-      <p>Scientist-entrepreneur with 7+ years turning deep-tech into products. 18 publications, 4 hard-tech startups supported, and $600K+ funding secured. Full lifecycle: concept → MVP → regulatory → launch.</p>
+      <p>
+        I’m a scientist-entrepreneur with 7+ years of experience turning deep-tech ideas into real products.
+        With a background rooted in Vietnam and shaped by years of study and life in South Korea and Canada, I bring an open,
+        multicultural perspective as a woman in tech who values diversity and supports minority voices.
+        What sets me apart is the way I bridge research and entrepreneurship—able to communicate across technical and business worlds
+        while leading teams with clarity. With a strong technical foundation and hands-on product management experience,
+        I’m committed to building sustainable projects that deliver real impact.
+      </p>
       <div class="cta">
         <a class="btn primary" href="#projects"><i class="fa-solid fa-folder-open"></i> View Case Studies</a>
         <a class="btn ghost" href="#contact"><i class="fa-regular fa-envelope"></i> Get in Touch</a>
@@ -139,6 +145,7 @@
         <div class="stat"><b>7+ yrs</b><small>Product & R&D</small></div>
         <div class="stat"><b>18</b><small>Publications</small></div>
         <div class="stat"><b>$600K+</b><small>Funding Raised</small></div>
+        <div class="stat"><b>4</b><small>Startups Supported</small></div>
       </div>
     </div>
   </header>
@@ -147,7 +154,7 @@
   <section id="about">
     <div class="container">
       <h2 class="section-title">About <span style="color:var(--brand)">Me</span></h2>
-      <p class="section-sub">Ph.D. in Materials Science with product leadership across nanotech, energy materials, medical devices, and biotech. I bridge research, regulatory, and go-to-market to de-risk hard-tech products.</p>
+      <p class="section-sub">Ph.D. in Materials Science with product leadership across nanotech, energy materials, medical devices, and biotech. I bridge research, regulatory, IP, and go-to-market to de-risk hard-tech products.</p>
 
       <div class="about-grid">
         <article class="about-card">
@@ -156,7 +163,7 @@
             <li>Product strategy & roadmap: KPI-driven, milestone-linked plans</li>
             <li>Customer discovery & validation (clinics, B2B, DTC)</li>
             <li>Execution: MVP → prototype → pilot → scale</li>
-            <li>Regulatory: ISO 13485, FDA, Health Canada basics</li>
+            <li>IP strategy & regulatory alignment (ISO 13485, risk files, design controls)</li>
             <li>Data & BI: SQL, Python, Tableau, Power BI</li>
             <li>Funding: grants, pitch, partnerships</li>
           </ul>
@@ -179,7 +186,7 @@
       <p class="section-sub">A few representative projects spanning med-tech, biotech, materials, and AI.</p>
 
       <div class="cards">
-        <!-- NEW: Energy Materials Case Study -->
+        <!-- Energy Materials Case Study -->
         <article class="card">
           <div class="card-head">
             <h3 style="margin:0">Energy Materials — Supercapacitors, Hybrid Batteries & Hydrogen Fuel Cells</h3>

@@ -84,141 +84,7 @@
     .tile ul{list-style:none;margin:0;padding:0}
     .tile li{padding:6px 0;color:#2f3e49}
 
-    /* CASE STUDIES */
-    .cards{display:grid;grid-template-columns:1fr;gap:18px}
-    .card{background:#fff;border:1px solid #e9eef2;border-radius:var(--radius);padding:22px;box-shadow:var(--shadow)}
-    .card-head{display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap}
-    .badge{font-size:.75rem;font-weight:800;color:#075a66;background:#d5f3f7;border:1px solid #bfeaf0;border-radius:999px;padding:.35rem .6rem}
-    .year{color:#6b7d8a;font-weight:700}
-    .card p{margin:.4rem 0 0;color:#33424d}
-    .more{display:flex;align-items:center;gap:8px;color:var(--brand-2);font-weight:700;margin-top:10px}
-    .more i{font-size:.9rem}
-    .more.as-button{background:transparent;border:none;padding:0;cursor:pointer}
-
-    /* Collapsible details */
-    .divider{height:1px;background:#e9eef2;margin:12px 0}
-    .collapse{display:none;margin-top:12px}
-    .collapse.open{display:block}
-    .cta-row{display:flex;gap:10px;margin-top:12px;flex-wrap:wrap}
-
-    /* CONTACT + FOOTER */
-    .contact-wrap{display:grid;grid-template-columns:1fr 1.1fr;gap:28px}
-    .list{display:grid;gap:14px}
-    .list .row{display:flex;gap:12px;align-items:center;background:#f7fbfc;border:1px solid #e0eef1;border-radius:14px;padding:14px}
-    .list i{color:var(--brand)}
-    input,textarea{width:100%;padding:14px;border-radius:12px;border:1px solid #dfe7ee;background:#fff;font:inherit}
-    input:focus,textarea:focus{outline:none;box-shadow:0 0 0 4px var(--ring);border-color:#b1e6ee}
-    textarea{min-height:140px;resize:vertical}
-    .submit{background:var(--brand-2);color:#fff;border:none;padding:14px 18px;border-radius:12px;font-weight:700}
-    .submit:hover{background:#087a89;cursor:pointer}
-    footer{background:var(--bg);color:#e3f7fb}
-    .foot{display:grid;grid-template-columns:1.2fr 1fr 1fr;gap:24px;padding:34px 0}
-    .foot h4{margin:.2rem 0 10px}
-    .foot p{color:#c9e6ec}
-    .links a{display:block;color:#c9e6ec;padding:.25rem 0}
-    .connect a{display:inline-flex;align-items:center;justify-content:center;width:42px;height:42px;border-radius:12px;background:rgba(255,255,255,.08);margin-right:10px}
-    .copyright{border-top:1px solid rgba(255,255,255,.12);padding:14px 0;color:#b6e0e8}
-
-    @media (max-width: 980px){
-      .about-grid,.contact-wrap,.foot,.triple{grid-template-columns:1fr}
-      .hero{min-height:64vh}
-    }
-  </style>
-</head>
-<body>
-
-  <!-- NAV -->
-  <nav class="nav">
-    <div class="container nav-wrap">
-      <a href="#" class="brand">Minh-Hai <span>Tran</span></a>
-      <ul>
-        <li><a href="#about">About</a></li>
-        <li><a href="#projects">Case Studies</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </div>
-  </nav>
-
-  <!-- HERO -->
-  <header class="hero">
-    <div class="container">
-      <h1>Product Manager<br/><span class="accent">Deep-Tech & Med-Tech</span></h1>
-      <p>
-        From lab to launch — I turn deep-tech into real-world change.
-      </p>
-      <div class="cta">
-        <a class="btn primary" href="#projects"><i class="fa-solid fa-folder-open"></i> View Case Studies</a>
-        <a class="btn ghost" href="#contact"><i class="fa-regular fa-envelope"></i> Get in Touch</a>
-        <a class="btn ghost" href="https://drive.google.com/file/d/1EXBqVnkhymVMn2ltTZYOjYdli1MMqrCq/view?usp=drive_link" download><i class="fa-solid fa-download"></i> Download Resume</a>
-      </div>
-      <div class="stats">
-        <div class="stat"><b>7+ yrs</b><small>Product & R&D</small></div>
-        <div class="stat"><b>18</b><small>Publications</small></div>
-        <div class="stat"><b>$600K+</b><small>Funding Raised</small></div>
-        <div class="stat"><b>4</b><small>Startups Supported</small></div>
-      </div>
-    </div>
-  </header>
-
-  <!-- ABOUT -->
-  <section id="about">
-    <div class="container">
-      <h2 class="section-title">About <span style="color:var(--brand)">Me</span></h2>
-      <p class="section-sub">Ph.D. in Materials Science with deep-tech product leadership across nanotech, energy, med-tech, and biotech. I turn complex science into real products — combining sharp communication, cross-functional thinking, and go-to-market planning. Born in Vietnam, shaped by life in South Korea and Canada, I bring a global, inclusive lens as a woman in tech. Driven, clear, and strategic, I build innovation that lasts..</p>
-
-      <div class="about-grid">
-        <article class="about-card">
-          <h3>What I Do</h3>
-          <ul class="muted" style="margin:8px 0 0 18px;line-height:1.7">
-            <li>Product strategy & roadmap: KPI-driven, milestone-linked plans</li>
-            <li>Customer discovery & validation (clinics, B2B, DTC)</li>
-            <li>Execution: Idea → prototype → MVP → pilot-scale </li>
-            <li>IP strategy & regulatory alignment (medtech, biotech, GMP)</li>
-            <li>Data & Marketing: SQL, Python, Tableau, Power BI, SEO </li>
-            <li>Funding: grants, pitch, partnerships</li>
-          </ul>
-        </article>
-
-        <div class="about-icons">
-          <div class="ico"><i class="fa-solid fa-diagram-project"></i><div><b>Lifecycle Owner</b><div class="muted">Concept to launch with clear gates, risks, and KPIs.</div></div></div>
-          <div class="ico"><i class="fa-solid fa-people-group"></i><div><b>Cross-Functional</b><div class="muted">R&D, regulatory, supply, finance, and marketing.</div></div></div>
-          <div class="ico"><i class="fa-solid fa-shield-halved"></i><div><b>Regulatory-Ready</b><div class="muted">Design controls, documentation, and audits.</div></div></div>
-          <div class="ico"><i class="fa-solid fa-chart-line"></i><div><b>Data-Driven</b><div class="muted">Insights to prioritize, de-risk, and ship.</div></div></div>
-        </div>
-      </div>
-
-      <!-- NEW: Education / Skills / Interests row -->
-      <div class="triple">
-        <div class="tile">
-          <h4>Education</h4>
-          <p><b>PhD Applied Physics</b><br/>Daegu University, South Korea (2012–2017)</p>
-          <p><b>MS Materials Science</b><br/>National University of Science, Vietnam (2007-2011)</p>
-        </div>
-        <div class="tile">
-          <h4>Post-Education</h4>
-          <ul>
-            <li>Diploma of Data Science (BrainStation, BC)</li>
-            <li>Boostrap Digital Marketing (GrowClass, BC)</li>
-            <li>Foundation of Project Management (Google)</li>
-            <li>Post-doc Entrepreneur Fellow (Concordia University, QC)</li>
-            <li>Post-doc Research Fellow (Chemical Engineering, UVIC, BC)</li>
-          </ul>
-        </div>
-        <div class="tile">
-          <h4>Research Interests</h4>
-          <ul>
-            <li>Sustainable Materials</li>
-            <li>Nanocomposites</li>
-            <li>Biomaterials & Med-tech</li>
-            <li>AI technology</li>
-            <li>Energy Devices</li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- CASE STUDIES -->
+     <!-- CASE STUDIES -->
   <section id="projects" style="background:#f7fbfd">
     <div class="container">
       <h2 class="section-title">Product <span style="color:var(--brand)">Case Studies</span></h2>
@@ -290,4 +156,188 @@
 
           <div class="collapse" id="p3">
             <div class="divider"></div>
-            <p><b>Outcomes</b>: target WVTR/strength ranges, pilot supplier LOI
+            <p><b>Outcomes</b>: target WVTR/strength ranges, pilot supplier LOIs, pilot-run cost model, packaging compliance checklist.</p>
+            <div class="cta-row">
+              <a class="btn small" href="#" onclick="alert('Publication link not available yet.');return false;">
+                <i class="fa-regular fa-square-up-right"></i> View Publication
+              </a>
+            </div>
+          </div>
+
+          <button class="more as-button" data-toggle data-target="p3">
+            <span>Learn More</span><i class="fa-solid fa-chevron-down"></i>
+          </button>
+        </article>
+
+        <!-- Case 4 -->
+        <article class="card">
+          <div class="card-head">
+            <h3 style="margin:0">TulipH — AI Cervical Screening</h3>
+            <span class="badge">PM</span><span class="year">2023–2024</span>
+          </div>
+          <p>Co-led AI MVP (OpenCV) achieving ~97% accuracy; secured $10K Dalhousie funding and Top-5 Impact at University of Toronto.</p>
+          <div>
+            <span class="chip">Health AI</span><span class="chip">MVP</span><span class="chip">Clinical Use-Case</span>
+          </div>
+
+          <div class="collapse" id="p4">
+            <div class="divider"></div>
+            <p><b>Stack</b>: Python, OpenCV, classical ML; HIPAA-aware data handling; clinician feedback loop.</p>
+            <div class="cta-row">
+              <a class="btn small" href="#" onclick="alert('Preprint in preparation.');return false;">
+                <i class="fa-regular fa-square-up-right"></i> View Publication
+              </a>
+            </div>
+          </div>
+
+          <button class="more as-button" data-toggle data-target="p4">
+            <span>Learn More</span><i class="fa-solid fa-chevron-down"></i>
+          </button>
+        </article>
+
+        <!-- Case 5 -->
+        <article class="card">
+          <div class="card-head">
+            <h3 style="margin:0">Outlier — AI Prompt Engineering</h3>
+            <span class="badge">AI</span><span class="year">2024–2025</span>
+          </div>
+          <p>Trained LLM/XGBoost for STEM; process improvements increased accuracy to ~90% via prompt design and evaluation loops.</p>
+          <div>
+            <span class="chip">LLM</span><span class="chip">Evaluation</span><span class="chip">Ops</span>
+          </div>
+
+          <div class="collapse" id="p5">
+            <div class="divider"></div>
+            <p><b>Contrib</b>: rubric design, adversarial test sets, error taxonomy, auto-eval pipeline; latency/quality trade-offs.</p>
+            <div class="cta-row">
+              <a class="btn small" href="#" onclick="alert('No public write-up available.');return false;">
+                <i class="fa-regular fa-square-up-right"></i> View Publication
+              </a>
+            </div>
+          </div>
+
+          <button class="more as-button" data-toggle data-target="p5">
+            <span>Learn More</span><i class="fa-solid fa-chevron-down"></i>
+          </button>
+        </article>
+
+        <!-- Case 6 -->
+        <article class="card">
+          <div class="card-head">
+            <h3 style="margin:0">Energy Materials — Supercapacitors, Hybrid Batteries & Hydrogen Fuel Cells</h3>
+            <span class="badge">R&D</span><span class="year">2012–2021</span>
+          </div>
+          <p>Key R&D role at Energy Materials and Chemical Engineering departments (Daegu and UVic Universities), with 18 publications, $600K+ raised, 5 startups supported, and one technology launched to market.</p>
+          <div>
+            <span class="chip">Energy Materials</span><span class="chip">Grant writing</span><span class="chip">Nanotechnology</span>
+            <span class="chip">Customer support</span><span class="chip">Report</span>
+          </div>
+
+          <div class="collapse" id="p6">
+            <div class="divider"></div>
+            <p><b>Focus</b>: 2D materials, MXenes, kesterites; electrochemistry (EIS, Tafel), high-rate cathodes; pilot-scale sample delivery.</p>
+            <div class="cta-row">
+              <a class="btn small" href="https://scholar.google.com/citations?user=35UROnUAAAAJ&hl=en" target="_blank" rel="noopener">
+                <i class="fa-regular fa-square-up-right"></i> View Publication
+              </a>
+            </div>
+          </div>
+
+          <button class="more as-button" data-toggle data-target="p6">
+            <span>Learn More</span><i class="fa-solid fa-chevron-down"></i>
+          </button>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact">
+    <div class="container">
+      <h2 class="section-title">Get In <span style="color:var(--brand)">Touch</span></h2>
+    <p class="section-sub">Open to Product Manager roles in med-tech, biotech, and deep-tech.</p>
+
+      <div class="contact-wrap">
+        <aside class="about-card">
+          <h3>Contact Information</h3>
+          <div class="list" style="margin-top:12px">
+            <div class="row"><i class="fa-regular fa-envelope"></i> <a href="mailto:mihari.tran@gmail.com">mihari.tran@gmail.com</a></div>
+            <div class="row"><i class="fa-solid fa-location-dot"></i> Coquitlam, BC, Canada</div>
+            <div class="row"><i class="fa-brands fa-linkedin"></i> <a href="https://www.linkedin.com/in/tran-minhhai/" target="_blank" rel="noopener">linkedin.com/in/tran-minhhai</a></div>
+          </div>
+
+          <div style="margin-top:18px">
+            <h4>Core Skills</h4>
+            <div>
+              <span class="chip">Product Roadmaps</span><span class="chip">Research</span><span class="chip">Customer Discovery</span><span class="chip">Go-to-Market</span>
+              <span class="chip">IP strategy</span><span class="chip">Scrum & Lean Mgmt</span><span class="chip">Technical writing</span>
+              <span class="chip">Data Analyst</span><span class="chip">Marketing strategy</span><span class="chip">Pitching</span><span class="chip">Accounting</span>
+            </div>
+          </div>
+        </aside>
+
+        <form class="about-card" onsubmit="event.preventDefault(); alert('Thanks! Your message has been queued.');">
+          <h3>Send a Message</h3>
+          <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px">
+            <div><label for="fname" class="muted" style="font-size:.9rem">First Name</label><input id="fname" required placeholder="John"></div>
+            <div><label for="lname" class="muted" style="font-size:.9rem">Last Name</label><input id="lname" required placeholder="Doe"></div>
+          </div>
+          <div><label for="email" class="muted" style="font-size:.9rem">Email</label><input id="email" type="email" required placeholder="john.doe@example.com"></div>
+          <div><label for="subject" class="muted" style="font-size:.9rem">Subject</label><input id="subject" placeholder="Product collaboration / role"></div>
+          <div><label for="message" class="muted" style="font-size:.9rem">Message</label><textarea id="message" placeholder="I'm interested in discussing..."></textarea></div>
+          <button class="submit" type="submit"><i class="fa-regular fa-paper-plane"></i>Send Message</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container foot">
+      <div>
+        <h4>Minh-Hai Tran</h4>
+        <p>Product Manager for deep-tech & med-tech — turning research into regulated, market-ready products.</p>
+      </div>
+      <div>
+        <h4>Quick Links</h4>
+        <div class="links">
+          <a href="#about">About</a>
+          <a href="#projects">Case Studies</a>
+          <a href="#contact">Contact</a>
+          <a href="https://scholar.google.com/citations?user=35UROnUAAAAJ&hl=en" target="_blank" rel="noopener">Publications</a>
+        </div>
+      </div>
+      <div>
+        <h4>Connect</h4>
+        <div class="connect">
+          <a aria-label="Email" href="mailto:mihari.tran@gmail.com"><i class="fa-regular fa-envelope" style="color:#e3f7fb"></i></a>
+          <a aria-label="LinkedIn" href="https://www.linkedin.com/in/tran-minhhai/" target="_blank" rel="noopener"><i class="fa-brands fa-linkedin-in" style="color:#e3f7fb"></i></a>
+          <a aria-label="GitHub" href="https://github.com/miha-tran/Miha" target="_blank" rel="noopener"><i class="fa-brands fa-github" style="color:#e3f7fb"></i></a>
+          <a aria-label="Google Scholar" href="https://scholar.google.com/citations?user=35UROnUAAAAJ&hl=en" target="_blank" rel="noopener"><i class="fa-regular fa-bookmark" style="color:#e3f7fb"></i></a>
+        </div>
+      </div>
+    </div>
+    <div class="container copyright">
+      © 2025 Minh-Hai Tran. Built for product management roles.
+    </div>
+  </footer>
+
+  <!-- Toggle logic -->
+  <script>
+    // Toggle "Learn More" / "Show Less" on case studies
+    document.querySelectorAll('[data-toggle]').forEach(btn=>{
+      btn.addEventListener('click', ()=>{
+        const id = btn.getAttribute('data-target');
+        const box = document.getElementById(id);
+        if (!box) return;
+        box.classList.toggle('open');
+        const open = box.classList.contains('open');
+        btn.querySelector('span').textContent = open ? 'Show Less' : 'Learn More';
+        btn.querySelector('i').className = open ? 'fa-solid fa-chevron-up' : 'fa-solid fa-chevron-down';
+      });
+    });
+  </script>
+</body>
+</html>
+
+

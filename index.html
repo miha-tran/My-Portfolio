@@ -4,6 +4,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Minh-Hai Tran — Product Manager (Deep-Tech & Med-Tech)</title>
+  <meta name="description" content="Minh-Hai Tran — Product Manager and materials scientist. 7+ years shipping deep-tech & med-tech products. Case studies, publications, and contact." />
 
   <!-- Fonts & Icons -->
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
@@ -77,14 +78,151 @@
     .ico i{color:var(--brand);font-size:1.2rem;margin-top:2px}
     .muted{color:var(--muted)}
 
-    /* NEW: About extras row */
+    /* About extras row */
     .triple{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-top:18px}
     .tile{background:#fff;border:1px solid #e9eef2;border-radius:var(--radius);padding:24px;text-align:center;box-shadow:var(--shadow)}
     .tile h4{margin:0 0 12px}
     .tile ul{list-style:none;margin:0;padding:0}
     .tile li{padding:6px 0;color:#2f3e49}
 
-     <!-- CASE STUDIES -->
+    /* CASE STUDIES */
+    .cards{display:grid;grid-template-columns:1fr;gap:18px}
+    .card{background:#fff;border:1px solid #e9eef2;border-radius:var(--radius);padding:22px;box-shadow:var(--shadow)}
+    .card-head{display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap}
+    .badge{font-size:.75rem;font-weight:800;color:#075a66;background:#d5f3f7;border:1px solid #bfeaf0;border-radius:999px;padding:.35rem .6rem}
+    .year{color:#6b7d8a;font-weight:700}
+    .card p{margin:.4rem 0 0;color:#33424d}
+    .more{display:flex;align-items:center;gap:8px;color:var(--brand-2);font-weight:700;margin-top:10px}
+    .more i{font-size:.9rem}
+    .more.as-button{background:transparent;border:none;padding:0;cursor:pointer}
+
+    /* Collapsible details */
+    .divider{height:1px;background:#e9eef2;margin:12px 0}
+    .collapse{display:none;margin-top:12px}
+    .collapse.open{display:block}
+    .cta-row{display:flex;gap:10px;margin-top:12px;flex-wrap:wrap}
+
+    /* CONTACT + FOOTER */
+    .contact-wrap{display:grid;grid-template-columns:1fr 1.1fr;gap:28px}
+    .list{display:grid;gap:14px}
+    .list .row{display:flex;gap:12px;align-items:center;background:#f7fbfc;border:1px solid #e0eef1;border-radius:14px;padding:14px}
+    .list i{color:var(--brand)}
+    input,textarea{width:100%;padding:14px;border-radius:12px;border:1px solid #dfe7ee;background:#fff;font:inherit}
+    input:focus,textarea:focus{outline:none;box-shadow:0 0 0 4px var(--ring);border-color:#b1e6ee}
+    textarea{min-height:140px;resize:vertical}
+    .submit{background:var(--brand-2);color:#fff;border:none;padding:14px 18px;border-radius:12px;font-weight:700}
+    .submit:hover{background:#087a89;cursor:pointer}
+    footer{background:var(--bg);color:#e3f7fb}
+    .foot{display:grid;grid-template-columns:1.2fr 1fr 1fr;gap:24px;padding:34px 0}
+    .foot h4{margin:.2rem 0 10px}
+    .foot p{color:#c9e6ec}
+    .links a{display:block;color:#c9e6ec;padding:.25rem 0}
+    .connect a{display:inline-flex;align-items:center;justify-content:center;width:42px;height:42px;border-radius:12px;background:rgba(255,255,255,.08);margin-right:10px}
+    .copyright{border-top:1px solid rgba(255,255,255,.12);padding:14px 0;color:#b6e0e8}
+
+    @media (max-width: 980px){
+      .about-grid,.contact-wrap,.foot,.triple{grid-template-columns:1fr}
+      .hero{min-height:64vh}
+    }
+  </style>
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="nav">
+    <div class="container nav-wrap">
+      <a href="#" class="brand">Minh-Hai <span>Tran</span></a>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Case Studies</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <header class="hero">
+    <div class="container">
+      <h1>Product Manager<br/><span class="accent">Deep-Tech &amp; Med-Tech</span></h1>
+      <p>
+        Scientist-entrepreneur with 7+ years turning deep-tech into products. Vietnam-born; shaped by work in South Korea and Canada.
+        I bridge R&amp;D, regulatory, and go-to-market to ship sustainable, revenue-driven products.
+      </p>
+      <div class="cta">
+        <a class="btn primary" href="#projects"><i class="fa-solid fa-folder-open"></i> View Case Studies</a>
+        <a class="btn ghost" href="#contact"><i class="fa-regular fa-envelope"></i> Get in Touch</a>
+        <a class="btn ghost" href="https://drive.google.com/file/d/1EXBqVnkhymVMn2ltTZYOjYdli1MMqrCq/view?usp=drive_link" target="_blank" rel="noopener">
+          <i class="fa-solid fa-download"></i> Download Résumé
+        </a>
+      </div>
+      <div class="stats">
+        <div class="stat"><b>7+ yrs</b><small>Product &amp; R&amp;D</small></div>
+        <div class="stat"><b>18</b><small>Publications</small></div>
+        <div class="stat"><b>$600K+</b><small>Funding Raised</small></div>
+        <div class="stat"><b>4</b><small>Startups Supported</small></div>
+      </div>
+    </div>
+  </header>
+
+  <!-- ABOUT -->
+  <section id="about">
+    <div class="container">
+      <h2 class="section-title">About <span style="color:var(--brand)">Me</span></h2>
+      <p class="section-sub">Ph.D. in Materials Science with product leadership across nanotech, energy materials, medical devices, and biotech. I bridge research, regulatory, IP, and go-to-market to de-risk hard-tech products.</p>
+
+      <div class="about-grid">
+        <article class="about-card">
+          <h3>What I Do</h3>
+          <ul class="muted" style="margin:8px 0 0 18px;line-height:1.7">
+            <li>Product strategy &amp; roadmap: KPI-driven, milestone-linked</li>
+            <li>Customer discovery &amp; validation (clinics, B2B, DTC)</li>
+            <li>Execution: MVP → prototype → pilot → scale</li>
+            <li>IP strategy &amp; regulatory alignment (med-tech, biotech, GMP)</li>
+            <li>Data &amp; Marketing: SQL, Python, Tableau/Power BI, SEO</li>
+            <li>Funding: grants, pitches, partnerships</li>
+          </ul>
+        </article>
+
+        <div class="about-icons">
+          <div class="ico"><i class="fa-solid fa-diagram-project"></i><div><b>Lifecycle Owner</b><div class="muted">Concept → launch with clear gates, risks, KPIs.</div></div></div>
+          <div class="ico"><i class="fa-solid fa-people-group"></i><div><b>Cross-Functional</b><div class="muted">R&amp;D, regulatory, supply, finance, marketing.</div></div></div>
+          <div class="ico"><i class="fa-solid fa-shield-halved"></i><div><b>Regulatory-Ready</b><div class="muted">Design controls, documentation, audits.</div></div></div>
+          <div class="ico"><i class="fa-solid fa-chart-line"></i><div><b>Data-Driven</b><div class="muted">Prioritize, de-risk, and ship with evidence.</div></div></div>
+        </div>
+      </div>
+
+      <!-- Education / Skills / Interests -->
+      <div class="triple">
+        <div class="tile">
+          <h4>Education</h4>
+          <p><b>PhD, Materials Science</b><br/>University Name (2019–2023)</p>
+          <p><b>MS, Materials Engineering</b><br/>University Name (2017–2019)</p>
+        </div>
+        <div class="tile">
+          <h4>Key Skills</h4>
+          <ul>
+            <li>Product Strategy &amp; Roadmaps</li>
+            <li>Customer Discovery</li>
+            <li>Regulatory &amp; IP (med-tech)</li>
+            <li>Data: SQL / Python / BI</li>
+            <li>Go-to-Market &amp; Ops</li>
+          </ul>
+        </div>
+        <div class="tile">
+          <h4>Research Interests</h4>
+          <ul>
+            <li>Sustainable &amp; Bio-materials</li>
+            <li>Nanocomposites</li>
+            <li>AI for Materials</li>
+            <li>Energy Devices</li>
+            <li>Clinical Translation</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CASE STUDIES -->
   <section id="projects" style="background:#f7fbfd">
     <div class="container">
       <h2 class="section-title">Product <span style="color:var(--brand)">Case Studies</span></h2>
@@ -95,7 +233,7 @@
         <article class="card">
           <div class="card-head">
             <h3 style="margin:0">Miha Biotech — Algae Wound Dressing</h3>
-            <span class="badge">PM / R&D</span><span class="year">2023–2025</span>
+            <span class="badge">PM / R&amp;D</span><span class="year">2023–2025</span>
           </div>
           <p>Owned product lifecycle for a Class II therapeutic: prototype validation, supplier onboarding, and regulatory documentation. Led a PhD team of 3 people to achieve a patent strategy, 3 MVPs and $200,000+ non-dilutive funding.</p>
           <div>
@@ -106,13 +244,13 @@
             <div class="divider"></div>
             <p><b>Highlights</b>: design controls, ISO 10993 test matrix, vendor QMS checks, packaging/aging plan; de-risked Canada Class II path.</p>
             <div class="cta-row">
-              <a class="btn small" href="https://scholar.google.com/citations?user=35UROnUAAAAJ&hl=en" target="_blank" rel="noopener">
+              <a class="btn small" href="https://www.v1.studio/portfolio/miha-biotech" target="_blank" rel="noopener">
                 <i class="fa-regular fa-square-up-right"></i> View Publication
               </a>
             </div>
           </div>
 
-          <button class="more as-button" data-toggle data-target="p1">
+          <button type="button" class="more as-button" data-toggle data-target="p1" aria-controls="p1" aria-expanded="false">
             <span>Learn More</span><i class="fa-solid fa-chevron-down"></i>
           </button>
         </article>
@@ -123,7 +261,7 @@
             <h3 style="margin:0">SYMBIOSIS — Food-Waste Platform</h3>
             <span class="badge">PM</span><span class="year">2025</span>
           </div>
-          <p>Led customer discovery, ecosystem mapping, and prototype; won Smart Food Stream ($5K) at Cooperathon; featured by Desjardins & BioEnterprise.</p>
+          <p>Led customer discovery, ecosystem mapping, and prototype; won Smart Food Stream ($5K) at Cooperathon; featured by Desjardins &amp; BioEnterprise.</p>
           <div>
             <span class="chip">Discovery</span><span class="chip">Prototype</span><span class="chip">Go-to-Market</span>
           </div>
@@ -132,13 +270,13 @@
             <div class="divider"></div>
             <p><b>Work</b>: JTBD interviews (n=40), service blueprint, partner MOUs, TAM/SAM sizing, KPI model.</p>
             <div class="cta-row">
-              <a class="btn small" href="#" onclick="alert('Public case study coming soon.');return false;">
-                <i class="fa-regular fa-square-up-right"></i> View Publication
+              <a class="btn small" href="https://cooperathon.ca/challenge-2025-smart-food-systems-ai-for-a-sustainable-agri-food-sector/?lang=en" target="_blank" rel="noopener">
+                <i class="fa-regular fa-square-up-right"></i> View Info
               </a>
             </div>
           </div>
 
-          <button class="more as-button" data-toggle data-target="p2">
+          <button type="button" class="more as-button" data-toggle data-target="p2" aria-controls="p2" aria-expanded="false">
             <span>Learn More</span><i class="fa-solid fa-chevron-down"></i>
           </button>
         </article>
@@ -146,8 +284,8 @@
         <!-- Case 3 -->
         <article class="card">
           <div class="card-head">
-            <h3 style="margin:0">PHYCO & SEAFOAM — Bio-Materials</h3>
-            <span class="badge">PM / R&D</span><span class="year">2023–2025</span>
+            <h3 style="margin:0">PHYCO &amp; SEAFOAM — Bio-Materials</h3>
+            <span class="badge">PM / R&amp;D</span><span class="year">2023–2025</span>
           </div>
           <p>Defined specs, roadmaps, and prototypes for seaweed plastics and sustainable foams; supported grants and partner engagement.</p>
           <div>
@@ -158,13 +296,13 @@
             <div class="divider"></div>
             <p><b>Outcomes</b>: target WVTR/strength ranges, pilot supplier LOIs, pilot-run cost model, packaging compliance checklist.</p>
             <div class="cta-row">
-              <a class="btn small" href="#" onclick="alert('Publication link not available yet.');return false;">
-                <i class="fa-regular fa-square-up-right"></i> View Publication
+              <a class="btn small" href="mailto:mihari.tran@gmail.com?subject=PHYCO%20%26%20SEAFOAM%20case%20study%20request" target="_blank" rel="noopener">
+                <i class="fa-regular fa-envelope"></i> Contact Me
               </a>
             </div>
           </div>
 
-          <button class="more as-button" data-toggle data-target="p3">
+          <button type="button" class="more as-button" data-toggle data-target="p3" aria-controls="p3" aria-expanded="false">
             <span>Learn More</span><i class="fa-solid fa-chevron-down"></i>
           </button>
         </article>
@@ -184,13 +322,13 @@
             <div class="divider"></div>
             <p><b>Stack</b>: Python, OpenCV, classical ML; HIPAA-aware data handling; clinician feedback loop.</p>
             <div class="cta-row">
-              <a class="btn small" href="#" onclick="alert('Preprint in preparation.');return false;">
-                <i class="fa-regular fa-square-up-right"></i> View Publication
+              <a class="btn small" href="mailto:mihari.tran@gmail.com?subject=TulipH%20preprint%20request" target="_blank" rel="noopener">
+                <i class="fa-regular fa-envelope"></i> Contact Me
               </a>
             </div>
           </div>
 
-          <button class="more as-button" data-toggle data-target="p4">
+          <button type="button" class="more as-button" data-toggle data-target="p4" aria-controls="p4" aria-expanded="false">
             <span>Learn More</span><i class="fa-solid fa-chevron-down"></i>
           </button>
         </article>
@@ -210,13 +348,13 @@
             <div class="divider"></div>
             <p><b>Contrib</b>: rubric design, adversarial test sets, error taxonomy, auto-eval pipeline; latency/quality trade-offs.</p>
             <div class="cta-row">
-              <a class="btn small" href="#" onclick="alert('No public write-up available.');return false;">
-                <i class="fa-regular fa-square-up-right"></i> View Publication
+              <a class="btn small" href="mailto:mihari.tran@gmail.com?subject=Outlier%20case%20study%20request" target="_blank" rel="noopener">
+                <i class="fa-regular fa-envelope"></i> Contact Me
               </a>
             </div>
           </div>
 
-          <button class="more as-button" data-toggle data-target="p5">
+          <button type="button" class="more as-button" data-toggle data-target="p5" aria-controls="p5" aria-expanded="false">
             <span>Learn More</span><i class="fa-solid fa-chevron-down"></i>
           </button>
         </article>
@@ -224,10 +362,10 @@
         <!-- Case 6 -->
         <article class="card">
           <div class="card-head">
-            <h3 style="margin:0">Energy Materials — Supercapacitors, Hybrid Batteries & Hydrogen Fuel Cells</h3>
-            <span class="badge">R&D</span><span class="year">2012–2021</span>
+            <h3 style="margin:0">Energy Materials — Supercapacitors, Hybrid Batteries &amp; Hydrogen Fuel Cells</h3>
+            <span class="badge">R&amp;D</span><span class="year">2012–2021</span>
           </div>
-          <p>Key R&D role at Energy Materials and Chemical Engineering departments (Daegu and UVic Universities), with 18 publications, $600K+ raised, 5 startups supported, and one technology launched to market.</p>
+          <p>Key R&amp;D role at Energy Materials and Chemical Engineering departments (Daegu and UVic Universities), with 18 publications, $600K+ raised, 5 startups supported, and one technology launched to market.</p>
           <div>
             <span class="chip">Energy Materials</span><span class="chip">Grant writing</span><span class="chip">Nanotechnology</span>
             <span class="chip">Customer support</span><span class="chip">Report</span>
@@ -243,7 +381,7 @@
             </div>
           </div>
 
-          <button class="more as-button" data-toggle data-target="p6">
+          <button type="button" class="more as-button" data-toggle data-target="p6" aria-controls="p6" aria-expanded="false">
             <span>Learn More</span><i class="fa-solid fa-chevron-down"></i>
           </button>
         </article>
@@ -255,7 +393,7 @@
   <section id="contact">
     <div class="container">
       <h2 class="section-title">Get In <span style="color:var(--brand)">Touch</span></h2>
-    <p class="section-sub">Open to Product Manager roles in med-tech, biotech, and deep-tech.</p>
+      <p class="section-sub">Open to Product Manager roles in med-tech, biotech, and deep-tech.</p>
 
       <div class="contact-wrap">
         <aside class="about-card">
@@ -270,7 +408,7 @@
             <h4>Core Skills</h4>
             <div>
               <span class="chip">Product Roadmaps</span><span class="chip">Research</span><span class="chip">Customer Discovery</span><span class="chip">Go-to-Market</span>
-              <span class="chip">IP strategy</span><span class="chip">Scrum & Lean Mgmt</span><span class="chip">Technical writing</span>
+              <span class="chip">IP strategy</span><span class="chip">Scrum &amp; Lean Mgmt</span><span class="chip">Technical writing</span>
               <span class="chip">Data Analyst</span><span class="chip">Marketing strategy</span><span class="chip">Pitching</span><span class="chip">Accounting</span>
             </div>
           </div>
@@ -296,7 +434,7 @@
     <div class="container foot">
       <div>
         <h4>Minh-Hai Tran</h4>
-        <p>Product Manager for deep-tech & med-tech — turning research into regulated, market-ready products.</p>
+        <p>Product Manager for deep-tech &amp; med-tech — turning research into regulated, market-ready products.</p>
       </div>
       <div>
         <h4>Quick Links</h4>
@@ -322,22 +460,28 @@
     </div>
   </footer>
 
-  <!-- Toggle logic -->
+  <!-- Toggle logic (place once, before </body>) -->
   <script>
-    // Toggle "Learn More" / "Show Less" on case studies
-    document.querySelectorAll('[data-toggle]').forEach(btn=>{
-      btn.addEventListener('click', ()=>{
-        const id = btn.getAttribute('data-target');
-        const box = document.getElementById(id);
+    // Expand/Collapse "Learn More" sections
+    document.querySelectorAll('[data-toggle]').forEach(btn => {
+      const targetId = btn.getAttribute('data-target');
+      btn.type = 'button';
+      btn.setAttribute('aria-controls', targetId);
+      btn.setAttribute('aria-expanded', 'false');
+
+      btn.addEventListener('click', () => {
+        const box = document.getElementById(targetId);
         if (!box) return;
-        box.classList.toggle('open');
-        const open = box.classList.contains('open');
-        btn.querySelector('span').textContent = open ? 'Show Less' : 'Learn More';
-        btn.querySelector('i').className = open ? 'fa-solid fa-chevron-up' : 'fa-solid fa-chevron-down';
+
+        const isOpen = box.classList.toggle('open');
+        const label = btn.querySelector('span');
+        const icon  = btn.querySelector('i');
+
+        if (label) label.textContent = isOpen ? 'Show Less' : 'Learn More';
+        if (icon)  icon.className = isOpen ? 'fa-solid fa-chevron-up' : 'fa-solid fa-chevron-down';
+        btn.setAttribute('aria-expanded', String(isOpen));
       });
     });
   </script>
 </body>
 </html>
-
-
